@@ -55,6 +55,11 @@ class Poly2:
     def draw(self, x_points=None):
         """ Méthode qui trace la courbe, voir fichier png."""
         polyCoeffiecients = [self.a,self.b,self.c]
+        fig = plt.figure(figsize=(10, 5))
+        plt.title('X^2 + X + 1')
+        plt.xlabel('Abscisses')
+        plt.ylabel('Ordonnées')
+        plt.grid(alpha=.6, linestyle=':')
         plt.plot(polyCoeffiecients)
         plt.show()
 
